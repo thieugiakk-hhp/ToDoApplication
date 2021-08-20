@@ -80,6 +80,9 @@ namespace ToDoAplication
             this.rbtImportant = new System.Windows.Forms.RadioButton();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.pnlNone = new System.Windows.Forms.Panel();
+            this.grbWorkList = new System.Windows.Forms.GroupBox();
+            this.lvTaskList = new System.Windows.Forms.ListView();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.ptbNewList = new System.Windows.Forms.PictureBox();
             this.txtNewList = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -91,9 +94,6 @@ namespace ToDoAplication
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.ptbSearch = new System.Windows.Forms.PictureBox();
-            this.grbWorkList = new System.Windows.Forms.GroupBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lvTaskList = new System.Windows.Forms.ListView();
             this.pnlHeader.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -119,13 +119,13 @@ namespace ToDoAplication
             this.grbStartDate.SuspendLayout();
             this.grbTitle.SuspendLayout();
             this.pnlNone.SuspendLayout();
+            this.grbWorkList.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbNewList)).BeginInit();
             this.panel1.SuspendLayout();
             this.grbNone.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSearch)).BeginInit();
-            this.grbWorkList.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -451,7 +451,7 @@ namespace ToDoAplication
             // 
             // ptbFeel4
             // 
-            this.ptbFeel4.Location = new System.Drawing.Point(470, 6);
+            this.ptbFeel4.Location = new System.Drawing.Point(465, 6);
             this.ptbFeel4.Name = "ptbFeel4";
             this.ptbFeel4.Size = new System.Drawing.Size(50, 50);
             this.ptbFeel4.TabIndex = 0;
@@ -459,7 +459,7 @@ namespace ToDoAplication
             // 
             // ptbFeel3
             // 
-            this.ptbFeel3.Location = new System.Drawing.Point(365, 6);
+            this.ptbFeel3.Location = new System.Drawing.Point(360, 6);
             this.ptbFeel3.Name = "ptbFeel3";
             this.ptbFeel3.Size = new System.Drawing.Size(50, 50);
             this.ptbFeel3.TabIndex = 0;
@@ -467,7 +467,7 @@ namespace ToDoAplication
             // 
             // ptbFeel2
             // 
-            this.ptbFeel2.Location = new System.Drawing.Point(255, 6);
+            this.ptbFeel2.Location = new System.Drawing.Point(250, 6);
             this.ptbFeel2.Name = "ptbFeel2";
             this.ptbFeel2.Size = new System.Drawing.Size(50, 50);
             this.ptbFeel2.TabIndex = 0;
@@ -475,7 +475,7 @@ namespace ToDoAplication
             // 
             // ptbFeel1
             // 
-            this.ptbFeel1.Location = new System.Drawing.Point(150, 6);
+            this.ptbFeel1.Location = new System.Drawing.Point(140, 6);
             this.ptbFeel1.Name = "ptbFeel1";
             this.ptbFeel1.Size = new System.Drawing.Size(50, 50);
             this.ptbFeel1.TabIndex = 0;
@@ -718,6 +718,44 @@ namespace ToDoAplication
             this.pnlNone.Size = new System.Drawing.Size(250, 586);
             this.pnlNone.TabIndex = 1;
             // 
+            // grbWorkList
+            // 
+            this.grbWorkList.Controls.Add(this.lvTaskList);
+            this.grbWorkList.Controls.Add(this.panel3);
+            this.grbWorkList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grbWorkList.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbWorkList.Location = new System.Drawing.Point(0, 241);
+            this.grbWorkList.Name = "grbWorkList";
+            this.grbWorkList.Size = new System.Drawing.Size(250, 345);
+            this.grbWorkList.TabIndex = 0;
+            this.grbWorkList.TabStop = false;
+            this.grbWorkList.Text = "Danh sách công việc";
+            // 
+            // lvTaskList
+            // 
+            this.lvTaskList.BackColor = System.Drawing.Color.White;
+            this.lvTaskList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lvTaskList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvTaskList.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvTaskList.FullRowSelect = true;
+            this.lvTaskList.GridLines = true;
+            this.lvTaskList.HideSelection = false;
+            this.lvTaskList.Location = new System.Drawing.Point(3, 58);
+            this.lvTaskList.Name = "lvTaskList";
+            this.lvTaskList.Size = new System.Drawing.Size(244, 284);
+            this.lvTaskList.TabIndex = 1;
+            this.lvTaskList.UseCompatibleStateImageBehavior = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.ptbNewList);
+            this.panel3.Controls.Add(this.txtNewList);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(3, 23);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(244, 35);
+            this.panel3.TabIndex = 2;
+            // 
             // ptbNewList
             // 
             this.ptbNewList.BackgroundImage = global::ToDoAplication.Properties.Resources.plus;
@@ -862,44 +900,6 @@ namespace ToDoAplication
             this.ptbSearch.TabIndex = 0;
             this.ptbSearch.TabStop = false;
             // 
-            // grbWorkList
-            // 
-            this.grbWorkList.Controls.Add(this.lvTaskList);
-            this.grbWorkList.Controls.Add(this.panel3);
-            this.grbWorkList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbWorkList.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbWorkList.Location = new System.Drawing.Point(0, 241);
-            this.grbWorkList.Name = "grbWorkList";
-            this.grbWorkList.Size = new System.Drawing.Size(250, 345);
-            this.grbWorkList.TabIndex = 0;
-            this.grbWorkList.TabStop = false;
-            this.grbWorkList.Text = "Danh sách công việc";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.ptbNewList);
-            this.panel3.Controls.Add(this.txtNewList);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(3, 23);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(244, 35);
-            this.panel3.TabIndex = 2;
-            // 
-            // lvTaskList
-            // 
-            this.lvTaskList.BackColor = System.Drawing.Color.White;
-            this.lvTaskList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lvTaskList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lvTaskList.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvTaskList.FullRowSelect = true;
-            this.lvTaskList.GridLines = true;
-            this.lvTaskList.HideSelection = false;
-            this.lvTaskList.Location = new System.Drawing.Point(3, 58);
-            this.lvTaskList.Name = "lvTaskList";
-            this.lvTaskList.Size = new System.Drawing.Size(244, 284);
-            this.lvTaskList.TabIndex = 1;
-            this.lvTaskList.UseCompatibleStateImageBehavior = false;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -950,15 +950,15 @@ namespace ToDoAplication
             this.grbTitle.ResumeLayout(false);
             this.grbTitle.PerformLayout();
             this.pnlNone.ResumeLayout(false);
+            this.grbWorkList.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbNewList)).EndInit();
             this.panel1.ResumeLayout(false);
             this.grbNone.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSearch)).EndInit();
-            this.grbWorkList.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }

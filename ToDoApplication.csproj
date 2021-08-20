@@ -46,6 +46,8 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,6 +59,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataModels\Account.cs" />
+    <Compile Include="DataModels\Category.cs" />
+    <Compile Include="DataModels\DatabaseContext.cs" />
+    <Compile Include="DataModels\Task.cs" />
+    <Compile Include="DataModels\TaskList.cs" />
+    <Compile Include="DataModels\UserInformation.cs" />
+    <Compile Include="DataModels\UserStatu.cs" />
     <Compile Include="frmCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
