@@ -401,7 +401,7 @@ namespace ToDoAplication
             // 
             this.cbbSort.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbSort.FormattingEnabled = true;
-            this.cbbSort.Location = new System.Drawing.Point(216, 60);
+            this.cbbSort.Location = new System.Drawing.Point(214, 56);
             this.cbbSort.Name = "cbbSort";
             this.cbbSort.Size = new System.Drawing.Size(85, 28);
             this.cbbSort.TabIndex = 3;
@@ -409,11 +409,12 @@ namespace ToDoAplication
             // 
             // btnMyStatus
             // 
+            this.btnMyStatus.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnMyStatus.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMyStatus.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMyStatus.Image = global::ToDoAplication.Properties.Resources.mood;
             this.btnMyStatus.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMyStatus.Location = new System.Drawing.Point(20, 60);
+            this.btnMyStatus.Location = new System.Drawing.Point(18, 56);
             this.btnMyStatus.Name = "btnMyStatus";
             this.btnMyStatus.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnMyStatus.Size = new System.Drawing.Size(190, 28);
