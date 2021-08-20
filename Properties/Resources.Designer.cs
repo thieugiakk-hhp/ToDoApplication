@@ -103,6 +103,16 @@ namespace ToDoAplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _7d78482d8a7c78d601446b3368a2b3e3 {
+            get {
+                object obj = ResourceManager.GetObject("7d78482d8a7c78d601446b3368a2b3e3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap act {
             get {
                 object obj = ResourceManager.GetObject("act", resourceCulture);
@@ -196,6 +206,16 @@ namespace ToDoAplication.Properties {
         internal static System.Drawing.Bitmap cogwheel {
             get {
                 object obj = ResourceManager.GetObject("cogwheel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap d8ab40f2b4d2154ba520681084aed24f {
+            get {
+                object obj = ResourceManager.GetObject("d8ab40f2b4d2154ba520681084aed24f", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,6 +423,26 @@ namespace ToDoAplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap next {
+            get {
+                object obj = ResourceManager.GetObject("next", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap patient {
+            get {
+                object obj = ResourceManager.GetObject("patient", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap plastic_cup {
             get {
                 object obj = ResourceManager.GetObject("plastic-cup", resourceCulture);
@@ -433,6 +473,16 @@ namespace ToDoAplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rating {
+            get {
+                object obj = ResourceManager.GetObject("rating", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap review {
             get {
                 object obj = ResourceManager.GetObject("review", resourceCulture);
@@ -446,6 +496,16 @@ namespace ToDoAplication.Properties {
         internal static System.Drawing.Bitmap star {
             get {
                 object obj = ResourceManager.GetObject("star", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap star_bw {
+            get {
+                object obj = ResourceManager.GetObject("star-bw", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -526,6 +586,16 @@ namespace ToDoAplication.Properties {
         internal static System.Drawing.Bitmap tick_mark {
             get {
                 object obj = ResourceManager.GetObject("tick-mark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap weighing_machine {
+            get {
+                object obj = ResourceManager.GetObject("weighing-machine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

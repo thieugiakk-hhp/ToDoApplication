@@ -36,18 +36,13 @@ namespace ToDoAplication
             this.txtResultBMI = new System.Windows.Forms.TextBox();
             this.lblCommentBMI = new System.Windows.Forms.Label();
             this.lblResultBMI = new System.Windows.Forms.Label();
+            this.btnCalBMI = new System.Windows.Forms.Button();
             this.lblCm = new System.Windows.Forms.Label();
             this.lblKg = new System.Windows.Forms.Label();
             this.nudHeight = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.nudWeight = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.tpgCalWater = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnCalBMI = new System.Windows.Forms.Button();
             this.ptbHeight = new System.Windows.Forms.PictureBox();
             this.ptbWeight = new System.Windows.Forms.PictureBox();
             this.tpgCalSleep = new System.Windows.Forms.TabPage();
@@ -58,17 +53,22 @@ namespace ToDoAplication
             this.cbbHour = new System.Windows.Forms.ComboBox();
             this.lblIfISleep = new System.Windows.Forms.Label();
             this.lblINeedWakeUp = new System.Windows.Forms.Label();
+            this.tpgCalWater = new System.Windows.Forms.TabPage();
+            this.btnSubWater = new System.Windows.Forms.Button();
             this.btnAddWater = new System.Windows.Forms.Button();
             this.ptbWaterCup = new System.Windows.Forms.PictureBox();
-            this.btnSubWater = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tctCalculator.SuspendLayout();
             this.tpgCalBMI.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudWeight)).BeginInit();
-            this.tpgCalWater.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbWeight)).BeginInit();
             this.tpgCalSleep.SuspendLayout();
+            this.tpgCalWater.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbWaterCup)).BeginInit();
             this.SuspendLayout();
             // 
@@ -161,6 +161,18 @@ namespace ToDoAplication
             this.lblResultBMI.TabIndex = 7;
             this.lblResultBMI.Text = "Kết quả BMI của bạn:";
             // 
+            // btnCalBMI
+            // 
+            this.btnCalBMI.BackColor = System.Drawing.Color.Transparent;
+            this.btnCalBMI.BackgroundImage = global::ToDoAplication.Properties.Resources.bmi1;
+            this.btnCalBMI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCalBMI.FlatAppearance.BorderSize = 0;
+            this.btnCalBMI.Location = new System.Drawing.Point(263, 133);
+            this.btnCalBMI.Name = "btnCalBMI";
+            this.btnCalBMI.Size = new System.Drawing.Size(75, 75);
+            this.btnCalBMI.TabIndex = 5;
+            this.btnCalBMI.UseVisualStyleBackColor = false;
+            // 
             // lblCm
             // 
             this.lblCm.AutoSize = true;
@@ -249,78 +261,6 @@ namespace ToDoAplication
             this.label1.TabIndex = 2;
             this.label1.Text = "_____";
             // 
-            // tpgCalWater
-            // 
-            this.tpgCalWater.BackColor = System.Drawing.Color.White;
-            this.tpgCalWater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.tpgCalWater.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tpgCalWater.Controls.Add(this.btnSubWater);
-            this.tpgCalWater.Controls.Add(this.btnAddWater);
-            this.tpgCalWater.Controls.Add(this.ptbWaterCup);
-            this.tpgCalWater.Controls.Add(this.textBox1);
-            this.tpgCalWater.Controls.Add(this.label5);
-            this.tpgCalWater.Controls.Add(this.label4);
-            this.tpgCalWater.Controls.Add(this.label2);
-            this.tpgCalWater.Location = new System.Drawing.Point(4, 34);
-            this.tpgCalWater.Name = "tpgCalWater";
-            this.tpgCalWater.Padding = new System.Windows.Forms.Padding(3);
-            this.tpgCalWater.Size = new System.Drawing.Size(776, 373);
-            this.tpgCalWater.TabIndex = 2;
-            this.tpgCalWater.Text = "Tính Lượng Nước";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(306, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(59, 33);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(381, 57);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 26);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "2.25 lít";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(365, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 33);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "/";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkGray;
-            this.label2.Location = new System.Drawing.Point(300, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 33);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "_____________";
-            // 
-            // btnCalBMI
-            // 
-            this.btnCalBMI.BackColor = System.Drawing.Color.Transparent;
-            this.btnCalBMI.BackgroundImage = global::ToDoAplication.Properties.Resources.bmi1;
-            this.btnCalBMI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCalBMI.Location = new System.Drawing.Point(263, 133);
-            this.btnCalBMI.Name = "btnCalBMI";
-            this.btnCalBMI.Size = new System.Drawing.Size(75, 75);
-            this.btnCalBMI.TabIndex = 5;
-            this.btnCalBMI.UseVisualStyleBackColor = false;
-            // 
             // ptbHeight
             // 
             this.ptbHeight.BackColor = System.Drawing.Color.Transparent;
@@ -335,7 +275,7 @@ namespace ToDoAplication
             // ptbWeight
             // 
             this.ptbWeight.BackColor = System.Drawing.Color.Transparent;
-            this.ptbWeight.BackgroundImage = global::ToDoAplication.Properties.Resources.weight_scale;
+            this.ptbWeight.BackgroundImage = global::ToDoAplication.Properties.Resources.weighing_machine;
             this.ptbWeight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ptbWeight.Location = new System.Drawing.Point(53, 18);
             this.ptbWeight.Name = "ptbWeight";
@@ -432,6 +372,35 @@ namespace ToDoAplication
             this.lblINeedWakeUp.TabIndex = 0;
             this.lblINeedWakeUp.Text = "Tôi cần thức dậy vào lúc...";
             // 
+            // tpgCalWater
+            // 
+            this.tpgCalWater.BackColor = System.Drawing.Color.White;
+            this.tpgCalWater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.tpgCalWater.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tpgCalWater.Controls.Add(this.btnSubWater);
+            this.tpgCalWater.Controls.Add(this.btnAddWater);
+            this.tpgCalWater.Controls.Add(this.ptbWaterCup);
+            this.tpgCalWater.Controls.Add(this.textBox1);
+            this.tpgCalWater.Controls.Add(this.label5);
+            this.tpgCalWater.Controls.Add(this.label4);
+            this.tpgCalWater.Controls.Add(this.label2);
+            this.tpgCalWater.Location = new System.Drawing.Point(4, 34);
+            this.tpgCalWater.Name = "tpgCalWater";
+            this.tpgCalWater.Padding = new System.Windows.Forms.Padding(3);
+            this.tpgCalWater.Size = new System.Drawing.Size(776, 373);
+            this.tpgCalWater.TabIndex = 2;
+            this.tpgCalWater.Text = "Tính Lượng Nước";
+            // 
+            // btnSubWater
+            // 
+            this.btnSubWater.BackgroundImage = global::ToDoAplication.Properties.Resources.sub_button;
+            this.btnSubWater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSubWater.Location = new System.Drawing.Point(215, 190);
+            this.btnSubWater.Name = "btnSubWater";
+            this.btnSubWater.Size = new System.Drawing.Size(50, 50);
+            this.btnSubWater.TabIndex = 5;
+            this.btnSubWater.UseVisualStyleBackColor = true;
+            // 
             // btnAddWater
             // 
             this.btnAddWater.BackgroundImage = global::ToDoAplication.Properties.Resources.add_button;
@@ -452,15 +421,47 @@ namespace ToDoAplication
             this.ptbWaterCup.TabIndex = 4;
             this.ptbWaterCup.TabStop = false;
             // 
-            // btnSubWater
+            // textBox1
             // 
-            this.btnSubWater.BackgroundImage = global::ToDoAplication.Properties.Resources.sub_button;
-            this.btnSubWater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSubWater.Location = new System.Drawing.Point(215, 190);
-            this.btnSubWater.Name = "btnSubWater";
-            this.btnSubWater.Size = new System.Drawing.Size(50, 50);
-            this.btnSubWater.TabIndex = 5;
-            this.btnSubWater.UseVisualStyleBackColor = true;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(306, 51);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(59, 33);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "0";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(381, 57);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 26);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "2.25 lít";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(365, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(26, 33);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "/";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkGray;
+            this.label2.Location = new System.Drawing.Point(300, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(171, 33);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "_____________";
             // 
             // frmCalculator
             // 
@@ -482,12 +483,12 @@ namespace ToDoAplication
             this.tpgCalBMI.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudWeight)).EndInit();
-            this.tpgCalWater.ResumeLayout(false);
-            this.tpgCalWater.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbWeight)).EndInit();
             this.tpgCalSleep.ResumeLayout(false);
             this.tpgCalSleep.PerformLayout();
+            this.tpgCalWater.ResumeLayout(false);
+            this.tpgCalWater.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbWaterCup)).EndInit();
             this.ResumeLayout(false);
 
