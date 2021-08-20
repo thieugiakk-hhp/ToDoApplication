@@ -44,5 +44,11 @@ namespace ToDoAplication
             frmUserStatus frm = new frmUserStatus();
             frm.ShowDialog();
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            frmHelp frm = new frmHelp();
+            frm.ShowDialog();
+        }
     }
 }
