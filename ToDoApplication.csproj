@@ -120,6 +120,7 @@
     <Compile Include="frmUserStatus.Designer.cs">
       <DependentUpon>frmUserStatus.cs</DependentUpon>
     </Compile>
+    <Compile Include="Functions\DrawCalendar.cs" />
     <Compile Include="Functions\FillToListView.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
