@@ -35,6 +35,7 @@ namespace ToDoAplication
         {
             FillToListView fill = new FillToListView();
             fill.FillListViewTaskList(lvTaskList, tblTaskLists, userID);
+            fill.FillListViewTasks(lvTasks, tblTasks, userID);
         }
 
         private void btnClose_Click(object sender, EventArgs e)

@@ -339,6 +339,13 @@
   <ItemGroup>
     <Content Include="Font\Roboto\LICENSE.txt" />
     <Content Include="README.txt" />
+    <None Include="Resources\leaf-5.png" />
+    <None Include="Resources\leaf-4.png" />
+    <None Include="Resources\leaf-3.png" />
+    <None Include="Resources\leaf-2.png" />
+    <None Include="Resources\image-from-rawpixel-id-2472885-png.png" />
+    <None Include="Resources\image-from-rawpixel-id-2472462-png.png" />
+    <None Include="Resources\leaf.png" />
     <None Include="Resources\TextLogo2.png" />
     <None Include="Resources\weekly-calendar.png" />
     <None Include="Resources\back.png" />

@@ -14,18 +14,21 @@ namespace ToDoAplication.Functions
         {
             foreach (var item in list)
             {
-                if (String.Compare(item.UserID.ToString(), userID, false) == 0)
+                if (item.UserID.ToString() == userID)
                 {
                     listView.Items.Add(item.Name.ToString());
                 }
             }
         }
 
-        public void FillListViewTasks(ListView listView, List<tblTask> list)
+        public void FillListViewTasks(ListView listView, List<tblTask> list, string userID)
         {
             foreach (var item in list)
             {
-                listView.Items.Add(item.Title);
+                if (item.UserID.ToString() == userID)
+                {
+                    listView.Items.Add(item.Title.ToString());
+                }
             }
         }
     }
