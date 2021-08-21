@@ -7,7 +7,7 @@ namespace ToDoAplication.DataModels
     using System.Data.Entity.Spatial;
 
     [Table("Task")]
-    public partial class Task
+    public partial class Tasks
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public long TaskID { get; set; }

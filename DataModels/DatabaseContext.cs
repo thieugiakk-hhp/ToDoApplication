@@ -14,9 +14,9 @@ namespace ToDoAplication.DataModels
 
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<Task> Tasks { get; set; }
+        public virtual DbSet<Tasks> Tasks { get; set; }
         public virtual DbSet<TaskList> TaskLists { get; set; }
-        public virtual DbSet<UserStatu> UserStatus { get; set; }
+        public virtual DbSet<UserStatus> UserStatus { get; set; }
         public virtual DbSet<UserInformation> UserInformations { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -59,12 +59,12 @@ namespace ToDoAplication.DataModels
                 .WithRequired(e => e.Category)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<Task>()
+            modelBuilder.Entity<Tasks>()
                 .Property(e => e.UserID)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Task>()
+            modelBuilder.Entity<Tasks>()
                 .Property(e => e.CategoryID)
                 .IsFixedLength()
                 .IsUnicode(false);
@@ -74,7 +74,7 @@ namespace ToDoAplication.DataModels
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<UserStatu>()
+            modelBuilder.Entity<UserStatus>()
                 .Property(e => e.UserID)
                 .IsFixedLength()
                 .IsUnicode(false);

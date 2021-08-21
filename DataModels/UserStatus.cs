@@ -6,7 +6,7 @@ namespace ToDoAplication.DataModels
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class UserStatu
+    public partial class UserStatus
     {
         [Key]
         [Column(TypeName = "date")]

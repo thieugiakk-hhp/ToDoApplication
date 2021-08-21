@@ -12,10 +12,10 @@ namespace ToDoAplication.DataModels
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Account()
         {
-            Tasks = new HashSet<Task>();
+            Tasks = new HashSet<Tasks>();
             TaskLists = new HashSet<TaskList>();
             UserInformations = new HashSet<UserInformation>();
-            UserStatus = new HashSet<UserStatu>();
+            UserStatus = new HashSet<UserStatus>();
         }
 
         [Key]
@@ -31,7 +31,7 @@ namespace ToDoAplication.DataModels
         public string Password { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Task> Tasks { get; set; }
+        public virtual ICollection<Tasks> Tasks { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TaskList> TaskLists { get; set; }
@@ -40,6 +40,6 @@ namespace ToDoAplication.DataModels
         public virtual ICollection<UserInformation> UserInformations { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<UserStatu> UserStatus { get; set; }
+        public virtual ICollection<UserStatus> UserStatus { get; set; }
     }
 }

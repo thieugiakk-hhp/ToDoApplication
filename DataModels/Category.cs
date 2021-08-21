@@ -11,7 +11,7 @@ namespace ToDoAplication.DataModels
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Category()
         {
-            Tasks = new HashSet<Task>();
+            Tasks = new HashSet<Tasks>();
         }
 
         [StringLength(10)]
@@ -22,6 +22,6 @@ namespace ToDoAplication.DataModels
         public string Name { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Task> Tasks { get; set; }
+        public virtual ICollection<Tasks> Tasks { get; set; }
     }
 }

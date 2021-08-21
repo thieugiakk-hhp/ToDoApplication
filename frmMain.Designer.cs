@@ -33,41 +33,25 @@ namespace ToDoAplication
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.cbxNotification = new System.Windows.Forms.CheckBox();
-            this.btnUserInformation = new System.Windows.Forms.Button();
             this.pnlHeaderButton = new System.Windows.Forms.Panel();
-            this.btnCalculator = new System.Windows.Forms.Button();
-            this.btnZoomOutForm = new System.Windows.Forms.Button();
-            this.btnHelp = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnExcelOutput = new System.Windows.Forms.Button();
             this.pnlShowList = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.pnlCalendar = new System.Windows.Forms.Panel();
             this.lvTask = new System.Windows.Forms.ListView();
             this.panel8 = new System.Windows.Forms.Panel();
             this.txtNewTask = new System.Windows.Forms.TextBox();
-            this.ptbNewActivity = new System.Windows.Forms.PictureBox();
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.ltlTitle = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.lblToday = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.cbbSort = new System.Windows.Forms.ComboBox();
-            this.btnMyStatus = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ptbFeel4 = new System.Windows.Forms.PictureBox();
-            this.ptbFeel3 = new System.Windows.Forms.PictureBox();
-            this.ptbFeel2 = new System.Windows.Forms.PictureBox();
-            this.ptbFeel1 = new System.Windows.Forms.PictureBox();
             this.pnlDetail = new System.Windows.Forms.Panel();
             this.grbDescription = new System.Windows.Forms.GroupBox();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.txtDayCreated = new System.Windows.Forms.TextBox();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.rbtDone = new System.Windows.Forms.RadioButton();
             this.grbInList = new System.Windows.Forms.GroupBox();
             this.txtInList = new System.Windows.Forms.TextBox();
             this.grbCategory = new System.Windows.Forms.GroupBox();
@@ -77,23 +61,39 @@ namespace ToDoAplication
             this.grbStartDate = new System.Windows.Forms.GroupBox();
             this.dtpStartDay = new System.Windows.Forms.DateTimePicker();
             this.grbTitle = new System.Windows.Forms.GroupBox();
-            this.rbtImportant = new System.Windows.Forms.RadioButton();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.pnlNone = new System.Windows.Forms.Panel();
             this.grbWorkList = new System.Windows.Forms.GroupBox();
             this.lvTaskList = new System.Windows.Forms.ListView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.ptbNewList = new System.Windows.Forms.PictureBox();
             this.txtNewList = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.grbNone = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.ptbNewActivity = new System.Windows.Forms.PictureBox();
+            this.btnMyStatus = new System.Windows.Forms.Button();
+            this.ptbFeel4 = new System.Windows.Forms.PictureBox();
+            this.ptbFeel3 = new System.Windows.Forms.PictureBox();
+            this.ptbFeel2 = new System.Windows.Forms.PictureBox();
+            this.ptbFeel1 = new System.Windows.Forms.PictureBox();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.rbtDone = new System.Windows.Forms.RadioButton();
+            this.rbtImportant = new System.Windows.Forms.RadioButton();
+            this.ptbNewList = new System.Windows.Forms.PictureBox();
             this.btnSingleTask = new System.Windows.Forms.Button();
             this.btnMyDay = new System.Windows.Forms.Button();
             this.btnImportant = new System.Windows.Forms.Button();
             this.btnMyWeek = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.ptbSearch = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cbxNotification = new System.Windows.Forms.CheckBox();
+            this.btnUserInformation = new System.Windows.Forms.Button();
+            this.btnCalculator = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnExcelOutput = new System.Windows.Forms.Button();
+            this.btnZoomForm = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -101,15 +101,10 @@ namespace ToDoAplication
             this.pnlShowList.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNewActivity)).BeginInit();
             this.pnlTitle.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel1)).BeginInit();
             this.pnlDetail.SuspendLayout();
             this.grbDescription.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -121,11 +116,17 @@ namespace ToDoAplication
             this.pnlNone.SuspendLayout();
             this.grbWorkList.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNewList)).BeginInit();
             this.panel1.SuspendLayout();
             this.grbNone.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbNewActivity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbNewList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -142,11 +143,12 @@ namespace ToDoAplication
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(165)))), ((int)(((byte)(255)))));
+            this.panel6.Controls.Add(this.pictureBox1);
             this.panel6.Controls.Add(this.panel5);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(907, 50);
+            this.panel6.Size = new System.Drawing.Size(897, 50);
             this.panel6.TabIndex = 2;
             // 
             // panel5
@@ -159,110 +161,19 @@ namespace ToDoAplication
             this.panel5.Size = new System.Drawing.Size(250, 50);
             this.panel5.TabIndex = 1;
             // 
-            // cbxNotification
-            // 
-            this.cbxNotification.Appearance = System.Windows.Forms.Appearance.Button;
-            this.cbxNotification.BackgroundImage = global::ToDoAplication.Properties.Resources.like;
-            this.cbxNotification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.cbxNotification.Checked = true;
-            this.cbxNotification.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbxNotification.FlatAppearance.BorderSize = 0;
-            this.cbxNotification.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cbxNotification.Location = new System.Drawing.Point(62, 0);
-            this.cbxNotification.Name = "cbxNotification";
-            this.cbxNotification.Size = new System.Drawing.Size(50, 50);
-            this.cbxNotification.TabIndex = 0;
-            this.cbxNotification.UseVisualStyleBackColor = true;
-            // 
-            // btnUserInformation
-            // 
-            this.btnUserInformation.BackgroundImage = global::ToDoAplication.Properties.Resources.woman1;
-            this.btnUserInformation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnUserInformation.FlatAppearance.BorderSize = 0;
-            this.btnUserInformation.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnUserInformation.Location = new System.Drawing.Point(6, 0);
-            this.btnUserInformation.Name = "btnUserInformation";
-            this.btnUserInformation.Size = new System.Drawing.Size(50, 50);
-            this.btnUserInformation.TabIndex = 2;
-            this.btnUserInformation.UseVisualStyleBackColor = true;
-            this.btnUserInformation.Click += new System.EventHandler(this.btnUserInformation_Click);
-            // 
             // pnlHeaderButton
             // 
             this.pnlHeaderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(165)))), ((int)(((byte)(255)))));
             this.pnlHeaderButton.Controls.Add(this.btnCalculator);
-            this.pnlHeaderButton.Controls.Add(this.btnZoomOutForm);
-            this.pnlHeaderButton.Controls.Add(this.btnHelp);
             this.pnlHeaderButton.Controls.Add(this.btnClose);
             this.pnlHeaderButton.Controls.Add(this.btnExcelOutput);
+            this.pnlHeaderButton.Controls.Add(this.btnZoomForm);
+            this.pnlHeaderButton.Controls.Add(this.btnHelp);
             this.pnlHeaderButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlHeaderButton.Location = new System.Drawing.Point(907, 0);
+            this.pnlHeaderButton.Location = new System.Drawing.Point(897, 0);
             this.pnlHeaderButton.Name = "pnlHeaderButton";
-            this.pnlHeaderButton.Size = new System.Drawing.Size(277, 50);
+            this.pnlHeaderButton.Size = new System.Drawing.Size(287, 50);
             this.pnlHeaderButton.TabIndex = 0;
-            // 
-            // btnCalculator
-            // 
-            this.btnCalculator.BackgroundImage = global::ToDoAplication.Properties.Resources.rating;
-            this.btnCalculator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnCalculator.FlatAppearance.BorderSize = 0;
-            this.btnCalculator.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCalculator.Location = new System.Drawing.Point(0, 0);
-            this.btnCalculator.Name = "btnCalculator";
-            this.btnCalculator.Size = new System.Drawing.Size(50, 50);
-            this.btnCalculator.TabIndex = 1;
-            this.btnCalculator.UseVisualStyleBackColor = true;
-            this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
-            // 
-            // btnZoomOutForm
-            // 
-            this.btnZoomOutForm.BackgroundImage = global::ToDoAplication.Properties.Resources.next;
-            this.btnZoomOutForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnZoomOutForm.FlatAppearance.BorderSize = 0;
-            this.btnZoomOutForm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnZoomOutForm.Location = new System.Drawing.Point(168, 0);
-            this.btnZoomOutForm.Name = "btnZoomOutForm";
-            this.btnZoomOutForm.Size = new System.Drawing.Size(50, 50);
-            this.btnZoomOutForm.TabIndex = 2;
-            this.btnZoomOutForm.UseVisualStyleBackColor = true;
-            // 
-            // btnHelp
-            // 
-            this.btnHelp.BackgroundImage = global::ToDoAplication.Properties.Resources.help;
-            this.btnHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnHelp.FlatAppearance.BorderSize = 0;
-            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnHelp.Location = new System.Drawing.Point(112, 0);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(50, 50);
-            this.btnHelp.TabIndex = 2;
-            this.btnHelp.UseVisualStyleBackColor = true;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackgroundImage = global::ToDoAplication.Properties.Resources.close;
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClose.Location = new System.Drawing.Point(224, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(50, 50);
-            this.btnClose.TabIndex = 1;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnExcelOutput
-            // 
-            this.btnExcelOutput.BackgroundImage = global::ToDoAplication.Properties.Resources.excel;
-            this.btnExcelOutput.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnExcelOutput.FlatAppearance.BorderSize = 0;
-            this.btnExcelOutput.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExcelOutput.Location = new System.Drawing.Point(56, 0);
-            this.btnExcelOutput.Name = "btnExcelOutput";
-            this.btnExcelOutput.Size = new System.Drawing.Size(50, 50);
-            this.btnExcelOutput.TabIndex = 1;
-            this.btnExcelOutput.UseVisualStyleBackColor = true;
             // 
             // pnlShowList
             // 
@@ -273,7 +184,7 @@ namespace ToDoAplication
             this.pnlShowList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlShowList.Location = new System.Drawing.Point(250, 50);
             this.pnlShowList.Name = "pnlShowList";
-            this.pnlShowList.Size = new System.Drawing.Size(654, 586);
+            this.pnlShowList.Size = new System.Drawing.Size(647, 586);
             this.pnlShowList.TabIndex = 4;
             // 
             // panel12
@@ -283,7 +194,7 @@ namespace ToDoAplication
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel12.Location = new System.Drawing.Point(0, 204);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(654, 382);
+            this.panel12.Size = new System.Drawing.Size(647, 382);
             this.panel12.TabIndex = 2;
             // 
             // pnlCalendar
@@ -291,7 +202,7 @@ namespace ToDoAplication
             this.pnlCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlCalendar.Location = new System.Drawing.Point(0, 0);
             this.pnlCalendar.Name = "pnlCalendar";
-            this.pnlCalendar.Size = new System.Drawing.Size(654, 382);
+            this.pnlCalendar.Size = new System.Drawing.Size(647, 382);
             this.pnlCalendar.TabIndex = 1;
             this.pnlCalendar.Visible = false;
             // 
@@ -306,7 +217,7 @@ namespace ToDoAplication
             this.lvTask.HideSelection = false;
             this.lvTask.Location = new System.Drawing.Point(0, 0);
             this.lvTask.Name = "lvTask";
-            this.lvTask.Size = new System.Drawing.Size(654, 382);
+            this.lvTask.Size = new System.Drawing.Size(647, 382);
             this.lvTask.TabIndex = 0;
             this.lvTask.UseCompatibleStateImageBehavior = false;
             this.lvTask.View = System.Windows.Forms.View.List;
@@ -314,12 +225,13 @@ namespace ToDoAplication
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.txtNewTask);
             this.panel8.Controls.Add(this.ptbNewActivity);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 175);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(654, 29);
+            this.panel8.Size = new System.Drawing.Size(647, 29);
             this.panel8.TabIndex = 1;
             // 
             // txtNewTask
@@ -327,55 +239,45 @@ namespace ToDoAplication
             this.txtNewTask.BackColor = System.Drawing.Color.White;
             this.txtNewTask.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNewTask.Font = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewTask.Location = new System.Drawing.Point(28, 3);
+            this.txtNewTask.Location = new System.Drawing.Point(29, 3);
             this.txtNewTask.Name = "txtNewTask";
-            this.txtNewTask.Size = new System.Drawing.Size(631, 21);
+            this.txtNewTask.Size = new System.Drawing.Size(622, 21);
             this.txtNewTask.TabIndex = 1;
             this.txtNewTask.Text = " Tác vụ mới";
-            // 
-            // ptbNewActivity
-            // 
-            this.ptbNewActivity.BackColor = System.Drawing.Color.Transparent;
-            this.ptbNewActivity.BackgroundImage = global::ToDoAplication.Properties.Resources.plus;
-            this.ptbNewActivity.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ptbNewActivity.Location = new System.Drawing.Point(0, 0);
-            this.ptbNewActivity.Name = "ptbNewActivity";
-            this.ptbNewActivity.Size = new System.Drawing.Size(28, 28);
-            this.ptbNewActivity.TabIndex = 0;
-            this.ptbNewActivity.TabStop = false;
             // 
             // pnlTitle
             // 
             this.pnlTitle.BackColor = System.Drawing.Color.Transparent;
+            this.pnlTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlTitle.Controls.Add(this.panel13);
             this.pnlTitle.Controls.Add(this.panel11);
             this.pnlTitle.Controls.Add(this.panel10);
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(654, 175);
+            this.pnlTitle.Size = new System.Drawing.Size(647, 175);
             this.pnlTitle.TabIndex = 0;
             // 
             // panel13
             // 
-            this.panel13.Controls.Add(this.ltlTitle);
+            this.panel13.Controls.Add(this.lblTitle);
             this.panel13.Controls.Add(this.lblToday);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(335, 100);
+            this.panel13.Size = new System.Drawing.Size(326, 98);
             this.panel13.TabIndex = 2;
             // 
-            // ltlTitle
+            // lblTitle
             // 
-            this.ltlTitle.AutoSize = true;
-            this.ltlTitle.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ltlTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(165)))), ((int)(((byte)(255)))));
-            this.ltlTitle.Location = new System.Drawing.Point(29, 21);
-            this.ltlTitle.Name = "ltlTitle";
-            this.ltlTitle.Size = new System.Drawing.Size(194, 39);
-            this.ltlTitle.TabIndex = 1;
-            this.ltlTitle.Text = "Ngày của tôi";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(165)))), ((int)(((byte)(255)))));
+            this.lblTitle.Location = new System.Drawing.Point(29, 21);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(194, 39);
+            this.lblTitle.TabIndex = 1;
+            this.lblTitle.Text = "Ngày của tôi";
             // 
             // lblToday
             // 
@@ -392,9 +294,9 @@ namespace ToDoAplication
             this.panel11.Controls.Add(this.cbbSort);
             this.panel11.Controls.Add(this.btnMyStatus);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel11.Location = new System.Drawing.Point(335, 0);
+            this.panel11.Location = new System.Drawing.Point(326, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(319, 100);
+            this.panel11.Size = new System.Drawing.Size(319, 98);
             this.panel11.TabIndex = 1;
             // 
             // cbbSort
@@ -407,83 +309,22 @@ namespace ToDoAplication
             this.cbbSort.TabIndex = 3;
             this.cbbSort.Text = "Sắp xếp";
             // 
-            // btnMyStatus
-            // 
-            this.btnMyStatus.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnMyStatus.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMyStatus.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMyStatus.Image = global::ToDoAplication.Properties.Resources.mood;
-            this.btnMyStatus.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMyStatus.Location = new System.Drawing.Point(18, 56);
-            this.btnMyStatus.Name = "btnMyStatus";
-            this.btnMyStatus.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnMyStatus.Size = new System.Drawing.Size(190, 28);
-            this.btnMyStatus.TabIndex = 4;
-            this.btnMyStatus.Text = "  Trạng thái của bạn";
-            this.btnMyStatus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMyStatus.UseVisualStyleBackColor = true;
-            this.btnMyStatus.Click += new System.EventHandler(this.btnMyStatus_Click);
-            // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.label1);
             this.panel10.Controls.Add(this.ptbFeel4);
             this.panel10.Controls.Add(this.ptbFeel3);
             this.panel10.Controls.Add(this.ptbFeel2);
             this.panel10.Controls.Add(this.ptbFeel1);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(0, 100);
+            this.panel10.Location = new System.Drawing.Point(0, 98);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(654, 75);
+            this.panel10.Size = new System.Drawing.Size(645, 75);
             this.panel10.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(-31, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(746, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "_________________________________________________________________________________" +
-    "___________";
-            // 
-            // ptbFeel4
-            // 
-            this.ptbFeel4.Location = new System.Drawing.Point(465, 6);
-            this.ptbFeel4.Name = "ptbFeel4";
-            this.ptbFeel4.Size = new System.Drawing.Size(50, 50);
-            this.ptbFeel4.TabIndex = 0;
-            this.ptbFeel4.TabStop = false;
-            // 
-            // ptbFeel3
-            // 
-            this.ptbFeel3.Location = new System.Drawing.Point(360, 6);
-            this.ptbFeel3.Name = "ptbFeel3";
-            this.ptbFeel3.Size = new System.Drawing.Size(50, 50);
-            this.ptbFeel3.TabIndex = 0;
-            this.ptbFeel3.TabStop = false;
-            // 
-            // ptbFeel2
-            // 
-            this.ptbFeel2.Location = new System.Drawing.Point(250, 6);
-            this.ptbFeel2.Name = "ptbFeel2";
-            this.ptbFeel2.Size = new System.Drawing.Size(50, 50);
-            this.ptbFeel2.TabIndex = 0;
-            this.ptbFeel2.TabStop = false;
-            // 
-            // ptbFeel1
-            // 
-            this.ptbFeel1.Location = new System.Drawing.Point(140, 6);
-            this.ptbFeel1.Name = "ptbFeel1";
-            this.ptbFeel1.Size = new System.Drawing.Size(50, 50);
-            this.ptbFeel1.TabIndex = 0;
-            this.ptbFeel1.TabStop = false;
             // 
             // pnlDetail
             // 
             this.pnlDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.pnlDetail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlDetail.Controls.Add(this.grbDescription);
             this.pnlDetail.Controls.Add(this.panel7);
             this.pnlDetail.Controls.Add(this.grbInList);
@@ -492,9 +333,9 @@ namespace ToDoAplication
             this.pnlDetail.Controls.Add(this.grbStartDate);
             this.pnlDetail.Controls.Add(this.grbTitle);
             this.pnlDetail.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlDetail.Location = new System.Drawing.Point(904, 50);
+            this.pnlDetail.Location = new System.Drawing.Point(897, 50);
             this.pnlDetail.Name = "pnlDetail";
-            this.pnlDetail.Size = new System.Drawing.Size(280, 586);
+            this.pnlDetail.Size = new System.Drawing.Size(287, 586);
             this.pnlDetail.TabIndex = 3;
             // 
             // grbDescription
@@ -505,7 +346,7 @@ namespace ToDoAplication
             this.grbDescription.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbDescription.Location = new System.Drawing.Point(0, 296);
             this.grbDescription.Name = "grbDescription";
-            this.grbDescription.Size = new System.Drawing.Size(280, 263);
+            this.grbDescription.Size = new System.Drawing.Size(285, 261);
             this.grbDescription.TabIndex = 4;
             this.grbDescription.TabStop = false;
             this.grbDescription.Text = "Nội dung";
@@ -519,7 +360,7 @@ namespace ToDoAplication
             this.txtDescription.Location = new System.Drawing.Point(3, 22);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(274, 238);
+            this.txtDescription.Size = new System.Drawing.Size(279, 236);
             this.txtDescription.TabIndex = 0;
             // 
             // panel7
@@ -529,9 +370,9 @@ namespace ToDoAplication
             this.panel7.Controls.Add(this.btnDelete);
             this.panel7.Controls.Add(this.rbtDone);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 559);
+            this.panel7.Location = new System.Drawing.Point(0, 557);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(280, 27);
+            this.panel7.Size = new System.Drawing.Size(285, 27);
             this.panel7.TabIndex = 3;
             // 
             // txtDayCreated
@@ -546,33 +387,6 @@ namespace ToDoAplication
             this.txtDayCreated.Text = "Đã tạo ngày";
             this.txtDayCreated.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btnDelete
-            // 
-            this.btnDelete.BackgroundImage = global::ToDoAplication.Properties.Resources.delete1;
-            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDelete.FlatAppearance.BorderSize = 0;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDelete.Location = new System.Drawing.Point(242, -1);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(27, 27);
-            this.btnDelete.TabIndex = 1;
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // rbtDone
-            // 
-            this.rbtDone.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbtDone.BackgroundImage = global::ToDoAplication.Properties.Resources.tick;
-            this.rbtDone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.rbtDone.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbtDone.FlatAppearance.BorderSize = 0;
-            this.rbtDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtDone.Location = new System.Drawing.Point(6, 0);
-            this.rbtDone.Name = "rbtDone";
-            this.rbtDone.Size = new System.Drawing.Size(27, 27);
-            this.rbtDone.TabIndex = 0;
-            this.rbtDone.TabStop = true;
-            this.rbtDone.UseVisualStyleBackColor = true;
-            // 
             // grbInList
             // 
             this.grbInList.BackColor = System.Drawing.Color.Transparent;
@@ -581,7 +395,7 @@ namespace ToDoAplication
             this.grbInList.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbInList.Location = new System.Drawing.Point(0, 236);
             this.grbInList.Name = "grbInList";
-            this.grbInList.Size = new System.Drawing.Size(280, 60);
+            this.grbInList.Size = new System.Drawing.Size(285, 60);
             this.grbInList.TabIndex = 1;
             this.grbInList.TabStop = false;
             this.grbInList.Text = "Danh sách";
@@ -593,7 +407,7 @@ namespace ToDoAplication
             this.txtInList.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInList.Location = new System.Drawing.Point(6, 25);
             this.txtInList.Name = "txtInList";
-            this.txtInList.Size = new System.Drawing.Size(263, 27);
+            this.txtInList.Size = new System.Drawing.Size(273, 27);
             this.txtInList.TabIndex = 0;
             // 
             // grbCategory
@@ -604,7 +418,7 @@ namespace ToDoAplication
             this.grbCategory.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbCategory.Location = new System.Drawing.Point(0, 176);
             this.grbCategory.Name = "grbCategory";
-            this.grbCategory.Size = new System.Drawing.Size(280, 60);
+            this.grbCategory.Size = new System.Drawing.Size(285, 60);
             this.grbCategory.TabIndex = 0;
             this.grbCategory.TabStop = false;
             this.grbCategory.Text = "Danh mục";
@@ -615,7 +429,7 @@ namespace ToDoAplication
             this.cbbCategories.FormattingEnabled = true;
             this.cbbCategories.Location = new System.Drawing.Point(6, 25);
             this.cbbCategories.Name = "cbbCategories";
-            this.cbbCategories.Size = new System.Drawing.Size(263, 27);
+            this.cbbCategories.Size = new System.Drawing.Size(273, 27);
             this.cbbCategories.TabIndex = 0;
             // 
             // grbEndDate
@@ -626,7 +440,7 @@ namespace ToDoAplication
             this.grbEndDate.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbEndDate.Location = new System.Drawing.Point(0, 116);
             this.grbEndDate.Name = "grbEndDate";
-            this.grbEndDate.Size = new System.Drawing.Size(280, 60);
+            this.grbEndDate.Size = new System.Drawing.Size(285, 60);
             this.grbEndDate.TabIndex = 0;
             this.grbEndDate.TabStop = false;
             this.grbEndDate.Text = "Đến ngày";
@@ -639,7 +453,7 @@ namespace ToDoAplication
             this.dtpEndDay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpEndDay.Location = new System.Drawing.Point(6, 25);
             this.dtpEndDay.Name = "dtpEndDay";
-            this.dtpEndDay.Size = new System.Drawing.Size(263, 27);
+            this.dtpEndDay.Size = new System.Drawing.Size(273, 27);
             this.dtpEndDay.TabIndex = 0;
             // 
             // grbStartDate
@@ -650,7 +464,7 @@ namespace ToDoAplication
             this.grbStartDate.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbStartDate.Location = new System.Drawing.Point(0, 60);
             this.grbStartDate.Name = "grbStartDate";
-            this.grbStartDate.Size = new System.Drawing.Size(280, 56);
+            this.grbStartDate.Size = new System.Drawing.Size(285, 56);
             this.grbStartDate.TabIndex = 0;
             this.grbStartDate.TabStop = false;
             this.grbStartDate.Text = "Từ ngày";
@@ -663,7 +477,7 @@ namespace ToDoAplication
             this.dtpStartDay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpStartDay.Location = new System.Drawing.Point(6, 25);
             this.dtpStartDay.Name = "dtpStartDay";
-            this.dtpStartDay.Size = new System.Drawing.Size(263, 27);
+            this.dtpStartDay.Size = new System.Drawing.Size(273, 27);
             this.dtpStartDay.TabIndex = 0;
             // 
             // grbTitle
@@ -675,25 +489,10 @@ namespace ToDoAplication
             this.grbTitle.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbTitle.Location = new System.Drawing.Point(0, 0);
             this.grbTitle.Name = "grbTitle";
-            this.grbTitle.Size = new System.Drawing.Size(280, 60);
+            this.grbTitle.Size = new System.Drawing.Size(285, 60);
             this.grbTitle.TabIndex = 0;
             this.grbTitle.TabStop = false;
             this.grbTitle.Text = "Tiêu đề";
-            // 
-            // rbtImportant
-            // 
-            this.rbtImportant.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbtImportant.BackgroundImage = global::ToDoAplication.Properties.Resources.star_bw;
-            this.rbtImportant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.rbtImportant.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbtImportant.FlatAppearance.BorderSize = 0;
-            this.rbtImportant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtImportant.Location = new System.Drawing.Point(242, 23);
-            this.rbtImportant.Name = "rbtImportant";
-            this.rbtImportant.Size = new System.Drawing.Size(27, 27);
-            this.rbtImportant.TabIndex = 0;
-            this.rbtImportant.TabStop = true;
-            this.rbtImportant.UseVisualStyleBackColor = true;
             // 
             // txtTitle
             // 
@@ -702,7 +501,7 @@ namespace ToDoAplication
             this.txtTitle.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTitle.Location = new System.Drawing.Point(6, 24);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(230, 27);
+            this.txtTitle.Size = new System.Drawing.Size(240, 27);
             this.txtTitle.TabIndex = 0;
             // 
             // pnlNone
@@ -756,16 +555,6 @@ namespace ToDoAplication
             this.panel3.Size = new System.Drawing.Size(244, 35);
             this.panel3.TabIndex = 2;
             // 
-            // ptbNewList
-            // 
-            this.ptbNewList.BackgroundImage = global::ToDoAplication.Properties.Resources.plus;
-            this.ptbNewList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ptbNewList.Location = new System.Drawing.Point(3, 5);
-            this.ptbNewList.Name = "ptbNewList";
-            this.ptbNewList.Size = new System.Drawing.Size(27, 27);
-            this.ptbNewList.TabIndex = 0;
-            this.ptbNewList.TabStop = false;
-            // 
             // txtNewList
             // 
             this.txtNewList.BackColor = System.Drawing.Color.White;
@@ -799,6 +588,140 @@ namespace ToDoAplication
             this.grbNone.Size = new System.Drawing.Size(250, 200);
             this.grbNone.TabIndex = 0;
             this.grbNone.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.txtSearch);
+            this.panel2.Controls.Add(this.ptbSearch);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(250, 35);
+            this.panel2.TabIndex = 0;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.BackColor = System.Drawing.Color.White;
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearch.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(39, 6);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(205, 27);
+            this.txtSearch.TabIndex = 1;
+            this.txtSearch.Text = " Tìm kiếm...";
+            // 
+            // ptbNewActivity
+            // 
+            this.ptbNewActivity.BackColor = System.Drawing.Color.Transparent;
+            this.ptbNewActivity.BackgroundImage = global::ToDoAplication.Properties.Resources.plus;
+            this.ptbNewActivity.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ptbNewActivity.Location = new System.Drawing.Point(3, 0);
+            this.ptbNewActivity.Name = "ptbNewActivity";
+            this.ptbNewActivity.Size = new System.Drawing.Size(28, 28);
+            this.ptbNewActivity.TabIndex = 0;
+            this.ptbNewActivity.TabStop = false;
+            // 
+            // btnMyStatus
+            // 
+            this.btnMyStatus.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnMyStatus.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMyStatus.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMyStatus.Image = global::ToDoAplication.Properties.Resources.mood;
+            this.btnMyStatus.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMyStatus.Location = new System.Drawing.Point(18, 56);
+            this.btnMyStatus.Name = "btnMyStatus";
+            this.btnMyStatus.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnMyStatus.Size = new System.Drawing.Size(190, 28);
+            this.btnMyStatus.TabIndex = 4;
+            this.btnMyStatus.Text = "  Trạng thái của bạn";
+            this.btnMyStatus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMyStatus.UseVisualStyleBackColor = true;
+            this.btnMyStatus.Click += new System.EventHandler(this.btnMyStatus_Click);
+            // 
+            // ptbFeel4
+            // 
+            this.ptbFeel4.Location = new System.Drawing.Point(465, 6);
+            this.ptbFeel4.Name = "ptbFeel4";
+            this.ptbFeel4.Size = new System.Drawing.Size(50, 50);
+            this.ptbFeel4.TabIndex = 0;
+            this.ptbFeel4.TabStop = false;
+            // 
+            // ptbFeel3
+            // 
+            this.ptbFeel3.Location = new System.Drawing.Point(360, 6);
+            this.ptbFeel3.Name = "ptbFeel3";
+            this.ptbFeel3.Size = new System.Drawing.Size(50, 50);
+            this.ptbFeel3.TabIndex = 0;
+            this.ptbFeel3.TabStop = false;
+            // 
+            // ptbFeel2
+            // 
+            this.ptbFeel2.Location = new System.Drawing.Point(250, 6);
+            this.ptbFeel2.Name = "ptbFeel2";
+            this.ptbFeel2.Size = new System.Drawing.Size(50, 50);
+            this.ptbFeel2.TabIndex = 0;
+            this.ptbFeel2.TabStop = false;
+            // 
+            // ptbFeel1
+            // 
+            this.ptbFeel1.Location = new System.Drawing.Point(140, 6);
+            this.ptbFeel1.Name = "ptbFeel1";
+            this.ptbFeel1.Size = new System.Drawing.Size(50, 50);
+            this.ptbFeel1.TabIndex = 0;
+            this.ptbFeel1.TabStop = false;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackgroundImage = global::ToDoAplication.Properties.Resources.delete1;
+            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDelete.Location = new System.Drawing.Point(252, -1);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(27, 27);
+            this.btnDelete.TabIndex = 1;
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // rbtDone
+            // 
+            this.rbtDone.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtDone.BackgroundImage = global::ToDoAplication.Properties.Resources.tick;
+            this.rbtDone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.rbtDone.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtDone.FlatAppearance.BorderSize = 0;
+            this.rbtDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtDone.Location = new System.Drawing.Point(6, -1);
+            this.rbtDone.Name = "rbtDone";
+            this.rbtDone.Size = new System.Drawing.Size(27, 27);
+            this.rbtDone.TabIndex = 0;
+            this.rbtDone.TabStop = true;
+            this.rbtDone.UseVisualStyleBackColor = true;
+            // 
+            // rbtImportant
+            // 
+            this.rbtImportant.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtImportant.BackgroundImage = global::ToDoAplication.Properties.Resources.star_bw;
+            this.rbtImportant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.rbtImportant.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtImportant.FlatAppearance.BorderSize = 0;
+            this.rbtImportant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtImportant.Location = new System.Drawing.Point(252, 24);
+            this.rbtImportant.Name = "rbtImportant";
+            this.rbtImportant.Size = new System.Drawing.Size(27, 27);
+            this.rbtImportant.TabIndex = 0;
+            this.rbtImportant.TabStop = true;
+            this.rbtImportant.UseVisualStyleBackColor = true;
+            // 
+            // ptbNewList
+            // 
+            this.ptbNewList.BackgroundImage = global::ToDoAplication.Properties.Resources.plus;
+            this.ptbNewList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ptbNewList.Location = new System.Drawing.Point(3, 5);
+            this.ptbNewList.Name = "ptbNewList";
+            this.ptbNewList.Size = new System.Drawing.Size(27, 27);
+            this.ptbNewList.TabIndex = 0;
+            this.ptbNewList.TabStop = false;
             // 
             // btnSingleTask
             // 
@@ -858,7 +781,7 @@ namespace ToDoAplication
             this.btnMyWeek.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMyWeek.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMyWeek.ForeColor = System.Drawing.Color.Black;
-            this.btnMyWeek.Image = global::ToDoAplication.Properties.Resources.act;
+            this.btnMyWeek.Image = global::ToDoAplication.Properties.Resources.weekly_calendar;
             this.btnMyWeek.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMyWeek.Location = new System.Drawing.Point(6, 68);
             this.btnMyWeek.Name = "btnMyWeek";
@@ -867,28 +790,6 @@ namespace ToDoAplication
             this.btnMyWeek.Text = " Tháng của tôi";
             this.btnMyWeek.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMyWeek.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.txtSearch);
-            this.panel2.Controls.Add(this.ptbSearch);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 35);
-            this.panel2.TabIndex = 0;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.BackColor = System.Drawing.Color.White;
-            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSearch.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(39, 6);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(205, 27);
-            this.txtSearch.TabIndex = 1;
-            this.txtSearch.Text = " Tìm kiếm...";
             // 
             // ptbSearch
             // 
@@ -899,6 +800,110 @@ namespace ToDoAplication
             this.ptbSearch.Size = new System.Drawing.Size(27, 27);
             this.ptbSearch.TabIndex = 0;
             this.ptbSearch.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::ToDoAplication.Properties.Resources.TextLogo2;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(250, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(647, 50);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // cbxNotification
+            // 
+            this.cbxNotification.Appearance = System.Windows.Forms.Appearance.Button;
+            this.cbxNotification.BackgroundImage = global::ToDoAplication.Properties.Resources.like;
+            this.cbxNotification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.cbxNotification.Checked = true;
+            this.cbxNotification.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbxNotification.FlatAppearance.BorderSize = 0;
+            this.cbxNotification.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbxNotification.Location = new System.Drawing.Point(62, 0);
+            this.cbxNotification.Name = "cbxNotification";
+            this.cbxNotification.Size = new System.Drawing.Size(50, 50);
+            this.cbxNotification.TabIndex = 0;
+            this.cbxNotification.UseVisualStyleBackColor = true;
+            // 
+            // btnUserInformation
+            // 
+            this.btnUserInformation.BackgroundImage = global::ToDoAplication.Properties.Resources.woman1;
+            this.btnUserInformation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnUserInformation.FlatAppearance.BorderSize = 0;
+            this.btnUserInformation.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUserInformation.Location = new System.Drawing.Point(6, 0);
+            this.btnUserInformation.Name = "btnUserInformation";
+            this.btnUserInformation.Size = new System.Drawing.Size(50, 50);
+            this.btnUserInformation.TabIndex = 2;
+            this.btnUserInformation.UseVisualStyleBackColor = true;
+            this.btnUserInformation.Click += new System.EventHandler(this.btnUserInformation_Click);
+            // 
+            // btnCalculator
+            // 
+            this.btnCalculator.BackgroundImage = global::ToDoAplication.Properties.Resources.rating;
+            this.btnCalculator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnCalculator.FlatAppearance.BorderSize = 0;
+            this.btnCalculator.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCalculator.Location = new System.Drawing.Point(6, 0);
+            this.btnCalculator.Name = "btnCalculator";
+            this.btnCalculator.Size = new System.Drawing.Size(50, 50);
+            this.btnCalculator.TabIndex = 1;
+            this.btnCalculator.UseVisualStyleBackColor = true;
+            this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackgroundImage = global::ToDoAplication.Properties.Resources.close;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClose.Location = new System.Drawing.Point(230, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(50, 50);
+            this.btnClose.TabIndex = 1;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnExcelOutput
+            // 
+            this.btnExcelOutput.BackgroundImage = global::ToDoAplication.Properties.Resources.excel;
+            this.btnExcelOutput.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnExcelOutput.FlatAppearance.BorderSize = 0;
+            this.btnExcelOutput.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExcelOutput.Location = new System.Drawing.Point(62, 0);
+            this.btnExcelOutput.Name = "btnExcelOutput";
+            this.btnExcelOutput.Size = new System.Drawing.Size(50, 50);
+            this.btnExcelOutput.TabIndex = 1;
+            this.btnExcelOutput.UseVisualStyleBackColor = true;
+            // 
+            // btnZoomForm
+            // 
+            this.btnZoomForm.BackgroundImage = global::ToDoAplication.Properties.Resources.next;
+            this.btnZoomForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnZoomForm.FlatAppearance.BorderSize = 0;
+            this.btnZoomForm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnZoomForm.Location = new System.Drawing.Point(174, 0);
+            this.btnZoomForm.Name = "btnZoomForm";
+            this.btnZoomForm.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnZoomForm.Size = new System.Drawing.Size(50, 50);
+            this.btnZoomForm.TabIndex = 2;
+            this.btnZoomForm.UseVisualStyleBackColor = true;
+            this.btnZoomForm.Click += new System.EventHandler(this.btnZoomForm_Click);
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.BackgroundImage = global::ToDoAplication.Properties.Resources.help;
+            this.btnHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnHelp.Location = new System.Drawing.Point(118, 0);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(50, 50);
+            this.btnHelp.TabIndex = 2;
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // frmMain
             // 
@@ -912,6 +917,7 @@ namespace ToDoAplication
             this.Controls.Add(this.pnlHeader);
             this.Font = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmMain";
@@ -926,17 +932,11 @@ namespace ToDoAplication
             this.panel12.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNewActivity)).EndInit();
             this.pnlTitle.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel1)).EndInit();
             this.pnlDetail.ResumeLayout(false);
             this.grbDescription.ResumeLayout(false);
             this.grbDescription.PerformLayout();
@@ -953,12 +953,18 @@ namespace ToDoAplication
             this.grbWorkList.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNewList)).EndInit();
             this.panel1.ResumeLayout(false);
             this.grbNone.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbNewActivity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbFeel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbNewList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1006,7 +1012,7 @@ namespace ToDoAplication
         private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.ComboBox cbbSort;
         private System.Windows.Forms.Label lblToday;
-        private System.Windows.Forms.Label ltlTitle;
+        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnMyStatus;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TextBox txtNewTask;
@@ -1015,7 +1021,7 @@ namespace ToDoAplication
         private System.Windows.Forms.ListView lvTask;
         private System.Windows.Forms.TextBox txtDayCreated;
         private System.Windows.Forms.Button btnMyWeek;
-        private System.Windows.Forms.Button btnZoomOutForm;
+        private System.Windows.Forms.Button btnZoomForm;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel11;
@@ -1024,11 +1030,11 @@ namespace ToDoAplication
         private System.Windows.Forms.PictureBox ptbFeel3;
         private System.Windows.Forms.PictureBox ptbFeel2;
         private System.Windows.Forms.PictureBox ptbFeel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnlCalendar;
         private System.Windows.Forms.GroupBox grbWorkList;
         private System.Windows.Forms.ListView lvTaskList;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

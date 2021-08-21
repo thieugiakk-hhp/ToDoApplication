@@ -62,15 +62,21 @@
     <Compile Include="DataModels\Account.cs" />
     <Compile Include="DataModels\Category.cs" />
     <Compile Include="DataModels\DatabaseContext.cs" />
-    <Compile Include="DataModels\Task.cs" />
+    <Compile Include="DataModels\Tasks.cs" />
     <Compile Include="DataModels\TaskList.cs" />
     <Compile Include="DataModels\UserInformation.cs" />
-    <Compile Include="DataModels\UserStatu.cs" />
+    <Compile Include="DataModels\UserStatus.cs" />
     <Compile Include="frmCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCalculator.Designer.cs">
       <DependentUpon>frmCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetail.Designer.cs">
+      <DependentUpon>frmDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEditUserInformation.cs">
       <SubType>Form</SubType>
@@ -118,6 +124,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCalculator.resx">
       <DependentUpon>frmCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetail.resx">
+      <DependentUpon>frmDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditUserInformation.resx">
       <DependentUpon>frmEditUserInformation.cs</DependentUpon>
@@ -329,6 +338,9 @@
   <ItemGroup>
     <Content Include="Font\Roboto\LICENSE.txt" />
     <Content Include="README.txt" />
+    <None Include="Resources\TextLogo2.png" />
+    <None Include="Resources\weekly-calendar.png" />
+    <None Include="Resources\back.png" />
     <None Include="Resources\star-bw.png" />
     <None Include="Resources\weighing-machine.png" />
     <None Include="Resources\rating.png" />
