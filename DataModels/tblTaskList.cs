@@ -6,15 +6,16 @@ namespace ToDoAplication.DataModels
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("TaskList")]
-    public partial class TaskList
+    [Table("tblTaskList")]
+    public partial class tblTaskList
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public TaskList()
+        public tblTaskList()
         {
-            Tasks = new HashSet<Tasks>();
+            tblTasks = new HashSet<tblTask>();
         }
 
+        [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public long TaskListID { get; set; }
 
@@ -26,9 +27,9 @@ namespace ToDoAplication.DataModels
         [StringLength(200)]
         public string Name { get; set; }
 
-        public virtual Account Account { get; set; }
+        public virtual tblAccount tblAccount { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Tasks> Tasks { get; set; }
+        public virtual ICollection<tblTask> tblTasks { get; set; }
     }
 }

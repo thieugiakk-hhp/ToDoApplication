@@ -6,9 +6,10 @@ namespace ToDoAplication.DataModels
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("Task")]
-    public partial class Tasks
+    [Table("tblTask")]
+    public partial class tblTask
     {
+        [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public long TaskID { get; set; }
 
@@ -39,10 +40,10 @@ namespace ToDoAplication.DataModels
 
         public bool Complete { get; set; }
 
-        public virtual Account Account { get; set; }
+        public virtual tblAccount tblAccount { get; set; }
 
-        public virtual Category Category { get; set; }
+        public virtual tblCategory tblCategory { get; set; }
 
-        public virtual TaskList TaskList { get; set; }
+        public virtual tblTaskList tblTaskList { get; set; }
     }
 }

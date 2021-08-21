@@ -59,13 +59,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataModels\Account.cs" />
-    <Compile Include="DataModels\Category.cs" />
     <Compile Include="DataModels\DatabaseContext.cs" />
-    <Compile Include="DataModels\Tasks.cs" />
-    <Compile Include="DataModels\TaskList.cs" />
-    <Compile Include="DataModels\UserInformation.cs" />
-    <Compile Include="DataModels\UserStatus.cs" />
+    <Compile Include="DataModels\tblAccount.cs" />
+    <Compile Include="DataModels\tblCategory.cs" />
+    <Compile Include="DataModels\tblTask.cs" />
+    <Compile Include="DataModels\tblTaskList.cs" />
+    <Compile Include="DataModels\tblUserInformation.cs" />
+    <Compile Include="DataModels\tblUserStatusInDay.cs" />
     <Compile Include="frmCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +120,7 @@
     <Compile Include="frmUserStatus.Designer.cs">
       <DependentUpon>frmUserStatus.cs</DependentUpon>
     </Compile>
+    <Compile Include="Functions\FillToListView.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCalculator.resx">
@@ -349,6 +350,7 @@
     <None Include="Resources\d8ab40f2b4d2154ba520681084aed24f.jpg" />
     <None Include="Resources\7d78482d8a7c78d601446b3368a2b3e3.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -6,7 +6,8 @@ namespace ToDoAplication.DataModels
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class UserStatus
+    [Table("tblUserStatusInDay")]
+    public partial class tblUserStatusInDay
     {
         [Key]
         [Column(TypeName = "date")]
@@ -23,6 +24,6 @@ namespace ToDoAplication.DataModels
 
         public double BMI { get; set; }
 
-        public virtual Account Account { get; set; }
+        public virtual tblAccount tblAccount { get; set; }
     }
 }

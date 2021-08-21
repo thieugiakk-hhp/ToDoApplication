@@ -6,8 +6,8 @@ namespace ToDoAplication.DataModels
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("UserInformation")]
-    public partial class UserInformation
+    [Table("tblUserInformation")]
+    public partial class tblUserInformation
     {
         [Key]
         [Column(Order = 0)]
@@ -26,6 +26,6 @@ namespace ToDoAplication.DataModels
         [StringLength(100)]
         public string Profession { get; set; }
 
-        public virtual Account Account { get; set; }
+        public virtual tblAccount tblAccount { get; set; }
     }
 }

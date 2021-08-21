@@ -12,74 +12,74 @@ namespace ToDoAplication.DataModels
         {
         }
 
-        public virtual DbSet<Account> Accounts { get; set; }
-        public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<Tasks> Tasks { get; set; }
-        public virtual DbSet<TaskList> TaskLists { get; set; }
-        public virtual DbSet<UserStatus> UserStatus { get; set; }
-        public virtual DbSet<UserInformation> UserInformations { get; set; }
+        public virtual DbSet<tblAccount> tblAccounts { get; set; }
+        public virtual DbSet<tblCategory> tblCategories { get; set; }
+        public virtual DbSet<tblTask> tblTasks { get; set; }
+        public virtual DbSet<tblTaskList> tblTaskLists { get; set; }
+        public virtual DbSet<tblUserStatusInDay> tblUserStatusInDays { get; set; }
+        public virtual DbSet<tblUserInformation> tblUserInformations { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Account>()
+            modelBuilder.Entity<tblAccount>()
                 .Property(e => e.UserID)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Account>()
+            modelBuilder.Entity<tblAccount>()
                 .Property(e => e.Email)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Account>()
+            modelBuilder.Entity<tblAccount>()
                 .Property(e => e.Password)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Account>()
-                .HasMany(e => e.Tasks)
-                .WithRequired(e => e.Account)
+            modelBuilder.Entity<tblAccount>()
+                .HasMany(e => e.tblTasks)
+                .WithRequired(e => e.tblAccount)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<Account>()
-                .HasMany(e => e.TaskLists)
-                .WithRequired(e => e.Account)
+            modelBuilder.Entity<tblAccount>()
+                .HasMany(e => e.tblTaskLists)
+                .WithRequired(e => e.tblAccount)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<Account>()
-                .HasMany(e => e.UserInformations)
-                .WithRequired(e => e.Account)
+            modelBuilder.Entity<tblAccount>()
+                .HasMany(e => e.tblUserInformations)
+                .WithRequired(e => e.tblAccount)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<Category>()
+            modelBuilder.Entity<tblCategory>()
                 .Property(e => e.CategoryID)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Category>()
-                .HasMany(e => e.Tasks)
-                .WithRequired(e => e.Category)
+            modelBuilder.Entity<tblCategory>()
+                .HasMany(e => e.tblTasks)
+                .WithRequired(e => e.tblCategory)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<Tasks>()
+            modelBuilder.Entity<tblTask>()
                 .Property(e => e.UserID)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Tasks>()
+            modelBuilder.Entity<tblTask>()
                 .Property(e => e.CategoryID)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<TaskList>()
+            modelBuilder.Entity<tblTaskList>()
                 .Property(e => e.UserID)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<UserStatus>()
+            modelBuilder.Entity<tblUserStatusInDay>()
                 .Property(e => e.UserID)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<UserInformation>()
+            modelBuilder.Entity<tblUserInformation>()
                 .Property(e => e.UserID)
                 .IsFixedLength()
                 .IsUnicode(false);

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ToDoAplication.Functions;
 using ToDoAplication.DataModels;
 
 namespace ToDoAplication
@@ -14,8 +15,8 @@ namespace ToDoAplication
     public partial class frmMain : Form
     {
         private DatabaseContext context;
-        private List<TaskList> taskLists;
-        private List<Tasks> tasks;
+        private List<tblTaskList> tblTaskLists;
+        private List<tblTask> tblTasks;
 
         public frmMain()
         {
@@ -23,13 +24,16 @@ namespace ToDoAplication
 
             context = new DatabaseContext();
 
-            taskLists = context.TaskLists.ToList();
-            tasks = context.Tasks.ToList();
+            tblTaskLists = context.tblTaskLists.ToList();
+            tblTasks = context.tblTasks.ToList();
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            FillToListView fill = new FillToListView();
+            fill.FillListViewTaskList(lvTaskList, tblTaskLists);
 
+            txtTitle.Text = tblTaskLists.Count.ToString();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
