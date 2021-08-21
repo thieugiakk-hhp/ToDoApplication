@@ -10,13 +10,13 @@ namespace ToDoAplication.Functions
 {
     class FillToListView
     {
-        public void FillListViewTaskList(ListView listView, List<tblTaskList> list)
+        public void FillListViewTaskList(ListView listView, List<tblTaskList> list, string userID)
         {
             foreach (var item in list)
             {
-                if (item.UserID == "admin")
+                if (String.Compare(item.UserID.ToString(), userID, false) == 0)
                 {
-                    listView.Items.Add(item.Name);
+                    listView.Items.Add(item.Name.ToString());
                 }
             }
         }

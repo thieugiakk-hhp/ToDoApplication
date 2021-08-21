@@ -912,7 +912,8 @@ namespace ToDoAplication
             // 
             // clhHeader
             // 
-            this.clhHeader.Width = 244;
+            this.clhHeader.Text = "Name";
+            this.clhHeader.Width = 200;
             // 
             // frmMain
             // 

@@ -17,6 +17,7 @@ namespace ToDoAplication
         private DatabaseContext context;
         private List<tblTaskList> tblTaskLists;
         private List<tblTask> tblTasks;
+        private string userID;
 
         public frmMain()
         {
@@ -26,14 +27,14 @@ namespace ToDoAplication
 
             tblTaskLists = context.tblTaskLists.ToList();
             tblTasks = context.tblTasks.ToList();
+
+            userID = "admin         ";
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
             FillToListView fill = new FillToListView();
-            fill.FillListViewTaskList(lvTaskList, tblTaskLists);
-
-            txtTitle.Text = tblTaskLists.Count.ToString();
+            fill.FillListViewTaskList(lvTaskList, tblTaskLists, userID);
         }
 
         private void btnClose_Click(object sender, EventArgs e)
