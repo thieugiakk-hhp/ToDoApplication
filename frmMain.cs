@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ToDoAplication.Functions;
-using ToDoAplication.DataModels;
+using ToDo.DataAccessLayer;
+using ToDo.DataAccessLayer.DataModels;
 
 namespace ToDoAplication
 {
@@ -54,6 +55,8 @@ namespace ToDoAplication
         private void btnUserInformation_Click(object sender, EventArgs e)
         {
             //Show form
+            /*frmLogin frm = new frmLogin();
+            frm.ShowDialog();*/
             frmUserInformation frm = new frmUserInformation();
             frm.ShowDialog();
         }

@@ -16,5 +16,11 @@ namespace ToDoAplication
         {
             InitializeComponent();
         }
+
+        private void btnEditInformation_Click(object sender, EventArgs e)
+        {
+            frmLogin frm = new frmLogin();
+            frm.ShowDialog();
+        }
     }
 }

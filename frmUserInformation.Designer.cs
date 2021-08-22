@@ -172,6 +172,7 @@ namespace ToDoAplication
             this.btnEditInformation.Size = new System.Drawing.Size(40, 40);
             this.btnEditInformation.TabIndex = 0;
             this.btnEditInformation.UseVisualStyleBackColor = true;
+            this.btnEditInformation.Click += new System.EventHandler(this.btnEditInformation_Click);
             // 
             // btnLogout
             // 
@@ -325,7 +326,7 @@ namespace ToDoAplication
             // 
             // frmUserInformation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(784, 411);

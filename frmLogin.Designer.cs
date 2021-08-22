@@ -29,6 +29,7 @@ namespace ToDoAplication
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.ptbBanner = new System.Windows.Forms.PictureBox();
@@ -41,10 +42,12 @@ namespace ToDoAplication
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.pnlLogin = new System.Windows.Forms.Panel();
             this.btnLoginSignup = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbBanner)).BeginInit();
             this.grbLoginSignin.SuspendLayout();
             this.pnlLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,7 +56,7 @@ namespace ToDoAplication
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(180, 317);
+            this.panel1.Size = new System.Drawing.Size(180, 313);
             this.panel1.TabIndex = 0;
             // 
             // ptbBanner
@@ -63,7 +66,7 @@ namespace ToDoAplication
             this.ptbBanner.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ptbBanner.Location = new System.Drawing.Point(0, 0);
             this.ptbBanner.Name = "ptbBanner";
-            this.ptbBanner.Size = new System.Drawing.Size(180, 317);
+            this.ptbBanner.Size = new System.Drawing.Size(180, 313);
             this.ptbBanner.TabIndex = 0;
             this.ptbBanner.TabStop = false;
             // 
@@ -73,7 +76,7 @@ namespace ToDoAplication
             this.lblEmail.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(67, 140);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(63, 24);
+            this.lblEmail.Size = new System.Drawing.Size(63, 23);
             this.lblEmail.TabIndex = 1;
             this.lblEmail.Text = "Email:";
             // 
@@ -127,7 +130,7 @@ namespace ToDoAplication
             this.lblPassword.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Location = new System.Drawing.Point(67, 190);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(99, 24);
+            this.lblPassword.Size = new System.Drawing.Size(99, 23);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Password:";
             // 
@@ -138,6 +141,7 @@ namespace ToDoAplication
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(200, 30);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // pnlLogin
             // 
@@ -151,7 +155,7 @@ namespace ToDoAplication
             this.pnlLogin.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlLogin.Location = new System.Drawing.Point(180, 0);
             this.pnlLogin.Name = "pnlLogin";
-            this.pnlLogin.Size = new System.Drawing.Size(440, 317);
+            this.pnlLogin.Size = new System.Drawing.Size(436, 313);
             this.pnlLogin.TabIndex = 4;
             // 
             // btnLoginSignup
@@ -163,15 +167,19 @@ namespace ToDoAplication
             this.btnLoginSignup.TabIndex = 4;
             this.btnLoginSignup.Text = "OK";
             this.btnLoginSignup.UseVisualStyleBackColor = true;
+            this.btnLoginSignup.Click += new System.EventHandler(this.btnLoginSignup_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(620, 317);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(616, 313);
             this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -192,6 +200,7 @@ namespace ToDoAplication
             this.grbLoginSignin.ResumeLayout(false);
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -209,5 +218,6 @@ namespace ToDoAplication
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Panel pnlLogin;
         private System.Windows.Forms.Button btnLoginSignup;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

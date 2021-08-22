@@ -59,13 +59,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataModels\DatabaseContext.cs" />
-    <Compile Include="DataModels\tblAccount.cs" />
-    <Compile Include="DataModels\tblCategory.cs" />
-    <Compile Include="DataModels\tblTask.cs" />
-    <Compile Include="DataModels\tblTaskList.cs" />
-    <Compile Include="DataModels\tblUserInformation.cs" />
-    <Compile Include="DataModels\tblUserStatusInDay.cs" />
     <Compile Include="frmCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -358,7 +351,16 @@
     <None Include="Resources\d8ab40f2b4d2154ba520681084aed24f.jpg" />
     <None Include="Resources\7d78482d8a7c78d601446b3368a2b3e3.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ToDo.BusinessAccessLayer\ToDo.BusinessAccessLayer.csproj">
+      <Project>{908806d3-1979-46d6-8f4c-4e4c0fe24416}</Project>
+      <Name>ToDo.BusinessAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToDo.DataAccessLayer\ToDo.DataAccessLayer.csproj">
+      <Project>{23c902b6-9364-4aa7-a2cd-b71a13300be2}</Project>
+      <Name>ToDo.DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

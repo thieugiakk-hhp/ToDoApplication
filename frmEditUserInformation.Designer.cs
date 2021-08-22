@@ -99,7 +99,7 @@ namespace ToDoAplication
             this.rbtFemale.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtFemale.Location = new System.Drawing.Point(210, 91);
             this.rbtFemale.Name = "rbtFemale";
-            this.rbtFemale.Size = new System.Drawing.Size(53, 24);
+            this.rbtFemale.Size = new System.Drawing.Size(52, 23);
             this.rbtFemale.TabIndex = 3;
             this.rbtFemale.TabStop = true;
             this.rbtFemale.Text = "Nữ";
@@ -112,7 +112,7 @@ namespace ToDoAplication
             this.rbtMale.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtMale.Location = new System.Drawing.Point(121, 91);
             this.rbtMale.Name = "rbtMale";
-            this.rbtMale.Size = new System.Drawing.Size(65, 24);
+            this.rbtMale.Size = new System.Drawing.Size(64, 23);
             this.rbtMale.TabIndex = 3;
             this.rbtMale.TabStop = true;
             this.rbtMale.Text = "Nam";
@@ -124,7 +124,7 @@ namespace ToDoAplication
             this.label7.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(6, 123);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 20);
+            this.label7.Size = new System.Drawing.Size(82, 19);
             this.label7.TabIndex = 2;
             this.label7.Text = "Công việc:";
             // 
@@ -143,7 +143,7 @@ namespace ToDoAplication
             this.label6.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 92);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 20);
+            this.label6.Size = new System.Drawing.Size(72, 19);
             this.label6.TabIndex = 2;
             this.label6.Text = "Giới tính:";
             // 
@@ -162,7 +162,7 @@ namespace ToDoAplication
             this.label5.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 60);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 20);
+            this.label5.Size = new System.Drawing.Size(44, 19);
             this.label5.TabIndex = 2;
             this.label5.Text = "Tuổi:";
             // 
@@ -181,7 +181,7 @@ namespace ToDoAplication
             this.label4.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(6, 27);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 20);
+            this.label4.Size = new System.Drawing.Size(100, 19);
             this.label4.TabIndex = 2;
             this.label4.Text = "Tên của bạn:";
             // 
@@ -209,7 +209,7 @@ namespace ToDoAplication
             this.label3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(6, 93);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 20);
+            this.label3.Size = new System.Drawing.Size(83, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Password:";
             // 
@@ -219,7 +219,7 @@ namespace ToDoAplication
             this.label2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 20);
+            this.label2.Size = new System.Drawing.Size(53, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Email:";
             // 
@@ -229,7 +229,7 @@ namespace ToDoAplication
             this.label1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(6, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 20);
+            this.label1.Size = new System.Drawing.Size(28, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "ID:";
             // 
@@ -301,7 +301,7 @@ namespace ToDoAplication
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::ToDoAplication.Properties.Resources.male;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(128, 45);
+            this.pictureBox1.Location = new System.Drawing.Point(121, 45);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(90, 90);
             this.pictureBox1.TabIndex = 0;
